@@ -28,7 +28,7 @@ const createPaymentUrl = async (req, res) => {
             vnp_TxnRef: `ORDER_${new Date().getTime()}`, 
             vnp_OrderInfo: `Thanh toán đơn hàng ${new Date().getTime()}`,
             vnp_OrderType: ProductCode.Other,
-            vnp_ReturnUrl: 'http://localhost:3000/orderSuccess', 
+            vnp_ReturnUrl: `${process.env.APP_API_URL}/orderSuccess`, 
             vnp_Locale: language === 'vn' ? VnpLocale.VN : VnpLocale.EN,
             vnp_CreateDate: dateFormat(new Date()),
             vnp_ExpireDate: dateFormat(tomorrow),

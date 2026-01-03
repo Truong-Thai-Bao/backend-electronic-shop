@@ -24,7 +24,7 @@ app.use(cookieParser());
 routes(app);
 
 // Kết nối MongoDB
-mongoose.connect('mongodb+srv://thaibao:wC9925TGDouXdWgC@cluster0.zjtg7fy.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect(`${process.env.MONGO_DB}`)
     .then(() => { console.log('Connect Db success!') })
     .catch((err) => { console.log(err) })
 
