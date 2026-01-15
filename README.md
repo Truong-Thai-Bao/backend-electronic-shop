@@ -44,7 +44,7 @@ The server is deployed and running at:
 
 #### 1. Clone the repository (if not already cloned)
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/Truong-Thai-Bao/backend-electronic-shop.git
 cd backend
 ```
 #### 2. Install dependencies
