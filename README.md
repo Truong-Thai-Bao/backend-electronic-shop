@@ -103,7 +103,7 @@ npm start
 ### 4. Payment
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
-| **GET** | `/api/payment/config` 
+| **POST** | `api/create_payment_url` | 
 ---
 ## Test account
 #### Admin account
